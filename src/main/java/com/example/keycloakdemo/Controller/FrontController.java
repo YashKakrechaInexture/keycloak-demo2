@@ -14,19 +14,8 @@ public class FrontController {
         return "home";
     }
 
-    @GetMapping("/admin")
-    public String adminPage(){
-        return "admin";
-    }
-
-    @GetMapping("/user")
+    @GetMapping("/login")
     public String userPage(){
         return "user";
-    }
-
-    @GetMapping("/public")
-    @ResponseBody
-    public String publicPage(){
-        return "Welcome public";
     }
 }
